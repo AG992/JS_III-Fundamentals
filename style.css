@@ -16,6 +16,11 @@ section {
     padding: 10px;
 }
 
+.table {
+    border: 1px solid;
+    width: 75%;
+}
+
 #addEntry {
     width: 5px;
     height: 13px;
@@ -24,4 +29,11 @@ section {
 #removeEntry {
     width: 5px;
     height: 13px;
+}
+
+#copyright {
+	float: left;
+	padding-top: 10px;
+	text-align: center;
+	width: 100%;
 }
