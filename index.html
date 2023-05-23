@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <article>
+        <h1 style="text-align:center">Objectives for the Day</h1>
+        <p style="text-align:center">Jot down all the things you need to get done today</p>
+    </article>
+
+<!-- Below is the table. This should allow user to enter tasks, mark them off -->
+<!-- & add new ones by clicking the bottom add button -->
+   
+    <section>
+        <table id="Table">
+            <tr>
+                <th>Completed</th>
+                <th>Task</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>Add Entry Button</p>
+                </td>
+                <td>
+                    <p>Delete Last Entry Button</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="addEntry" type="button">
+                </td>
+                <td>
+                    <input id="removeEntry" type="button">
+                </td>
+            </tr>
+            <tr id="Base">
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+        </table>
+    </section>
+    <script src="./index.js"></script> 
+</body>
+</html>
