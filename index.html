@@ -13,11 +13,12 @@
         <p style="text-align:center">Jot down all the things you need to get done today</p>
     </article>
 
-<!-- Below is the table. This should allow user to enter tasks, mark them off -->
-<!-- & add new ones by clicking the bottom add button -->
+<!-- Below is the table. This should allow user to enter a task, check them off -->
+<!-- & add new ones by clicking the add button. Remove button will remove bottom entry -->
    
-    <section>
-        <table id="Table">
+    <section class="center">
+        <table id="Table" class="center">
+            <tbody id="Table2">
             <tr>
                 <th>Completed</th>
                 <th>Task</th>
@@ -27,7 +28,7 @@
                     <p>Add Entry Button</p>
                 </td>
                 <td>
-                    <p>Delete Last Entry Button</p>
+                    <p>Delete Entries from bottom Button</p>
                 </td>
             </tr>
             <tr>
@@ -46,8 +47,12 @@
                     <input type="text">
                 </td>
             </tr>
+            </tbody>
         </table>
     </section>
+    <footer>
+        <p class="center">&copy;Gravante Inc.</p>
+    </footer>
     <script src="./index.js"></script> 
 </body>
 </html>

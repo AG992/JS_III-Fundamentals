@@ -3,12 +3,21 @@ let rmvBtn = document.getElementById('removeEntry');
 
 let baseEntry = document.getElementById('Base');
 let Table = document.getElementById('Table');
-let clone = baseEntry.cloneNode(true);
+let Table2 = document.getElementById('Table2');
 
 function addEntry() { 
-    Table.appendChild(clone);
+    Table.appendChild(baseEntry.cloneNode(true));
     addBtn.addEventListener('click', addEntry);
 }
 
+function rmvEntry() {
+    if(Table.childElementCount == 1) {
+        rmvBtn.addEventListener('click', rmvEntry);
+    } else {    
+        Table.lastElementChild.remove();
+        rmvBtn.addEventListener('click', rmvEntry);
+    }
+}
+
 addBtn.addEventListener('click', addEntry);
-// document.createElement()
+rmvBtn.addEventListener('click', rmvEntry);

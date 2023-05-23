@@ -1,3 +1,27 @@
+body {
+    background-color: rgb(187, 144, 179);
+}
+
 h1 { 
     color: purple;
   }
+
+section {
+  border: 2px solid green;
+}
+
+.center {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+#addEntry {
+    width: 5px;
+    height: 13px;
+}
+
+#removeEntry {
+    width: 5px;
+    height: 13px;
+}
